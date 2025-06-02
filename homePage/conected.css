@@ -1,0 +1,55 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center; 
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.contact-numbers {
+  display: inline-flex; 
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-numbers a {
+  padding: 12px 20px;
+  background-color: #263d4b;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.contact-numbers a:hover {
+  background-color: #45a049;
+}
+/* فورم التواصل */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.contact .btn {
+    display: inline-block;
+    background-color: #263d4b;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact .btn:hover {
+    background-color: #df7a08;
+}

@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="title"></title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="conected.css" />
+    <link rel="stylesheet" href="headar.css" /> 
+    <script src="https://unpkg.com/i18next@22.4.9/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@1.4.1/i18nextHttpBackend.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+<header>
+  <div class="header-container">
+    <div class="left-side">
+      <div class="logo-title">
+        <img src="../../assets/images/logo1.png" data-i18n="logo" class="logo" />
+        <h1 data-i18n="title"></h1>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <nav>
+        <ul>
+          <li><a href="#about" data-i18n="nav_about"></a></li>
+          <li><a href="#services" data-i18n="nav_services">الخدمات</a></li>
+          <li><a href="#contact" data-i18n="nav_contact"></a></li>
+        </ul>
+      </nav>
+      <div class="language-switcher">
+        <button onclick="changeLanguage('ar')">العربية</button>
+        <button onclick="changeLanguage('en')">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <section class="hero">
+    <video autoplay muted loop id="heroVideo">
+        <source src="../../assets/videos/video_Welding.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+        <h1 data-i18n="text_1"></h1>
+        <p data-i18n="text_2"></p>
+        <a href="#contact" class="btn" data-i18n="nav_contact"></a>
+    </div>
+   </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+          <div class="about-text">
+            <h2 data-i18n="nav_about"></h2>
+          <p >
+            dsdssssssssssssssssssssssssss
+            sssssssssssssssssssssssssss          
+          </p> 
+        </div>
+        <div class="about-image">
+            <img src="../../assets/images/image.jpg"/>
+          </div>
+              </div>
+           </section>
+
+     <section id="services" class="services">
+        <h1>خدماتنا</h1>
+        <div class="service-cards">
+          <a href="../service\welding-service\welding-details.html" target="_blank" class="card">
+               <img src="../../assets/images/Welding.jpg" alt="لحام كهربائي" />
+              <h3>لحام كهربائي</h3>
+               <p>أحدث تقنيات اللحام الكهربائي لضمان قوة التوصيل.</p>
+             </a>
+
+            <div class="service-cards">
+          <a href="../service\manufacturing-service\manufacturing-details.html" target="_blank" class="card">
+            <img src="../../assets/images/Welding.jpg" alt="لحام كهربائي" />
+            <h3>تصنيع </h3>
+               <p>أحدث تقنيات اللحام الكهربائي لضمان قوة التوصيل.</p>
+             </a>
+        
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+    <h1 data-i18n="contact_text"></h1>
+   <h2>
+    <p data-i18n="contact_1"></p>
+  </h2>
+    <a href="mailto:example@weldingcompany.com" class="btn">راسلنا عبر Email</a>
+    <a href="https://wa.me/+201116960053" target="_blank" class="btn"> تواصل عبر Whatsapp</a>
+     
+  <h2 data-i18n="" ></h2>
+     <div class="contact-numbers">
+       <a href="tel:01116119368">01116119368</a>
+       <a href="tel:01001736094">01001736094</a>
+        <a href="tel:01116119370">01116119370</a>
+        <a href="tel:01095401005">01095401005</a>
+    </div>
+</section>
+
+  <h1 data-i18n="contact_text1"></h1>
+
+<div class="map-container">
+    <iframe 
+     src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4087.3460475403585!2d31.303261576176595!3d30.164553474863478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815b6b55feacb%3A0xca25f1ed61ef53f6!2z2KfZhNmH2YbYr9iz2YrYqSDZhNiq2YPZhtmI2YTZiNis2YrYpyDYp9mE2YTYrdin2YUg2YUu2KfZitmF2YYg2LPZhNmK2YU!5e1!3m2!1sen!2seg!4v1748023901041!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
+       width="100%" 
+       height="400" 
+       style="border:0;" 
+       allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+       </iframe>
+     </div> 
+    
+
+    <footer>
+        <p  data-i18n="contact_text2"></p>
+    </footer>
+
+    <script>
+      window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.classList.add('shrink');
+    } else {
+        header.classList.remove('shrink');
+    }
+});
+</script>
+
+  <script src="../constant/language.js"></script>
+
+   </body>
+</html>
