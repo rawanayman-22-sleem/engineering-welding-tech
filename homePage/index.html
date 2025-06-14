@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="conected.css" />
     <link rel="stylesheet" href="headar.css" /> 
+
     <script src="https://unpkg.com/i18next@22.4.9/i18next.min.js"></script>
     <script src="https://unpkg.com/i18next-http-backend@1.4.1/i18nextHttpBackend.min.js"></script>
+    <script src="../constant/language.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  
 </head>
 
 <body>
@@ -20,7 +23,7 @@
   <div class="header-container">
     <div class="left-side">
       <div class="logo-title">
-        <img src="../../assets/images/logo1.png" data-i18n="logo" class="logo" />
+        <img src="../../assets/images/logoCompany.png" data-i18n="logo" class="logo" />
         <h1 data-i18n="title"></h1>
       </div>
     </div>
@@ -41,7 +44,6 @@
   </div>
 </header>
 
-
   <section class="hero">
     <video autoplay muted loop id="heroVideo">
         <source src="../../assets/videos/video_Welding.mp4" type="video/mp4" />
@@ -53,35 +55,20 @@
     </div>
    </section>
 
-    <section id="about" class="about">
-        <div class="about-container">
-          <div class="about-text">
-            <h2 data-i18n="nav_about"></h2>
-          <p >
-            dsdssssssssssssssssssssssssss
-            sssssssssssssssssssssssssss          
-          </p> 
-        </div>
-        <div class="about-image">
-            <img src="../../assets/images/image.jpg"/>
-          </div>
-              </div>
-           </section>
-
      <section id="services" class="services">
-        <h1>خدماتنا</h1>
+        <h1 data-i18n="nav_services"></h1>
         <div class="service-cards">
           <a href="../service\welding-service\welding-details.html" target="_blank" class="card">
-               <img src="../../assets/images/Welding.jpg" alt="لحام كهربائي" />
-              <h3>لحام كهربائي</h3>
-               <p>أحدث تقنيات اللحام الكهربائي لضمان قوة التوصيل.</p>
+           <img src="../../assets/images/Welding.jpg" alt="" data-i18n="service_electric" />
+              <h3 data-i18n="service_electric"> </h3>
+               <p data-i18n="service_electric1"> </p>
              </a>
 
             <div class="service-cards">
           <a href="../service\manufacturing-service\manufacturing-details.html" target="_blank" class="card">
-            <img src="../../assets/images/Welding.jpg" alt="لحام كهربائي" />
-            <h3>تصنيع </h3>
-               <p>أحدث تقنيات اللحام الكهربائي لضمان قوة التوصيل.</p>
+            <img src="../../assets/images/manufact.jpg" alt="">
+            <h3 data-i18n="service_make"> </h3>
+               <p data-i18n="service_make1"> </p>
              </a>
         
         </div>
@@ -92,10 +79,18 @@
    <h2>
     <p data-i18n="contact_1"></p>
   </h2>
-    <a href="mailto:example@weldingcompany.com" class="btn">راسلنا عبر Email</a>
-    <a href="https://wa.me/+201116960053" target="_blank" class="btn"> تواصل عبر Whatsapp</a>
+    <a href="mailto:example@weldingcompany.com" class="btn" data-i18n="contact_3"> </a>
      
-  <h2 data-i18n="" ></h2>
+ <section class="choose-contact">
+    <h3 ></h3>
+    <div class="contact-options">
+      <a href="https://wa.me/+201208210331" target="_blank" class="btn">Whatsapp 1</a>
+      <a href="https://wa.me/+201095401005" target="_blank" class="btn">Whatsapp 2</a>
+   </div>
+</section>
+
+      <h2 data-i18n="contact_2"></h2>
+
      <div class="contact-numbers">
        <a href="tel:01116119368">01116119368</a>
        <a href="tel:01001736094">01001736094</a>
@@ -104,8 +99,29 @@
     </div>
 </section>
 
-  <h1 data-i18n="contact_text1"></h1>
+<section id="about" class="about">
+  <div class="about-container">
 
+    <div class="about-text">
+      <h2 data-i18n="nav_about"></h2>
+      <p data-i18n="nav_about1"></p>
+
+      <!-- زر المزيد -->
+      <a href="../../homePage/aboutUS/aboutUs.html" target="_blank" class="btn-more" data-i18n="botton_more"></a>
+    </div>
+
+    <div class="about-video">
+      <video autoplay muted loop playsinline id="aboutVideo" aria-label="About Us Video">
+        <source src="../../assets/videos/welding.mp4" type="video/mp4" />
+        <!-- نص بديل في حالة عدم دعم الفيديو -->
+        <p>Your browser does not support HTML5 video.</p>
+      </video>
+    </div>
+
+  </div>
+</section>
+
+  <h1 data-i18n="contact_text1"></h1>
 <div class="map-container">
     <iframe 
      src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4087.3460475403585!2d31.303261576176595!3d30.164553474863478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815b6b55feacb%3A0xca25f1ed61ef53f6!2z2KfZhNmH2YbYr9iz2YrYqSDZhNiq2YPZhtmI2YTZiNis2YrYpyDYp9mE2YTYrdin2YUg2YUu2KfZitmF2YYg2LPZhNmK2YU!5e1!3m2!1sen!2seg!4v1748023901041!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
@@ -119,10 +135,44 @@
      </div> 
     
 
-    <footer>
-        <p  data-i18n="contact_text2"></p>
-    </footer>
+<footer>
+  <div class="footer-main">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2 data-i18n="title_1"> </h2>
+        <p data-i18n="about_footer"></p>
+      </div>
 
+      <div class="footer-links">
+        <h3 data-i18n="foteer_1"></h3>
+        <ul>
+          <li><a href="#" data-i18n="foteer_11" ></a></li>
+          <li><a href="#about" data-i18n="nav_about" ></a></li>
+          <li><a href="#services" data-i18n="nav_services" ></a></li>
+          <li><a href="#contact" data-i18n="contact_text" ></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h3 data-i18n="foteer_2"></h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1WGjwcB1sP/" class="btn" target="_blank">
+            <img src="../../assets/images/faceicon.png" alt="Facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+     <span data-i18n="contact_text2"></span>
+  </div>
+</footer>
+
+
+
+
+   
     <script>
       window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
@@ -134,7 +184,6 @@
 });
 </script>
 
-  <script src="../constant/language.js"></script>
 
    </body>
 </html>
