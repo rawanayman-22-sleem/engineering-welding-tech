@@ -7,8 +7,9 @@ i18next
     lng: savedLang,
     debug: true,
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json'
-    }
+  loadPath: '/locales/translation{{lng}}.json'
+}
+
   }, function(err, t) {
     updateContent();
     resolve();
