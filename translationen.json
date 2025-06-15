@@ -36,5 +36,16 @@
 "foteer_1":"Links",
 "foteer_11":"Home",
 "foteer_2":"Follow Us ",
-"contact_text2":" Engineering Company for Welding Technology All rights reserved. © 2025"
+"contact_text2":" Engineering Company for Welding Technology All rights reserved. © 2025",
+
+"title-welding": "Welding Services Exhibition" ,
+"filter":"All",
+"filter_title1": "Cast Welding",
+"filter_title2": "Steel Welding",
+"filter_title3": "Copper Welding",
+"filter_title4": "Aluminum Welding",
+
+"title_manufact": "Manufacturing Services Exhibition",
+"title_manufact1":"Manufacturing",
+"title_manufact2":"Repairs"
 }

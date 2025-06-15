@@ -10,9 +10,9 @@ window.i18nextReady = new Promise((resolve, reject) => {
       lng: savedLang,
       debug: true,
       backend: {
-     /*  loadPath: `translation{{lng}}.json` // local servier  */
+      loadPath: `translation{{lng}}.json` // local servier  
        
-        loadPath: `/${basePath}/translation{{lng}}.json` 
+       /* loadPath: `/${basePath}/translation{{lng}}.json` */
       }
     }, function(err, t) {
       updateContent();

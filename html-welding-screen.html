@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title data-i18n="title_manufact">  </title>
+  <title data-i18n="title-welding"> </title>
   
   <link rel="stylesheet" href="css-page-const-desig.css" />
 
@@ -13,16 +13,19 @@
  
   <script src="js-language.js"></script>
 
+
 </head>
 <body> 
 
-    <h1 style="text-align: center; margin-bottom: 40px; color: #000000;">معرض خدمات التصنيع  </h1>
+    <h1 style="text-align: center; margin-bottom: 40px; color: #000000;" data-i18n="title-welding"> </h1>
 
     <div class="filter-buttons">
+        <button data-filter="all" class="active" data-i18n="filter"></button>
+        <button data-filter="1" data-i18n="filter_title1"></button>
+        <button data-filter="2" data-i18n="filter_title2"></button>
+        <button data-filter="3" data-i18n="filter_title3"></button>
+        <button data-filter="4" data-i18n="filter_title4"></button>
 
-    <button data-filter="all" class="active" data-i18n="filter"></button>
-    <button data-filter="تصنيع" data-i18n="title_manufact1"></button>
-     <button data-filter="اصلاحات" data-i18n="title_manufact2"></button>
 
 </div>
 
@@ -45,7 +48,34 @@
           "itank_car.png",
           "itank_car1.png",
          ],
-        'اصلاحات'  // نفس القيمة بالضبط مع data-filter في الزر
+        'تصليح'  // نفس القيمة بالضبط مع data-filter في الزر
+      );
+
+      ServicePage.renderServiceGallery(
+        i18next.t("contact_text"),
+        [
+          "itank_food.png",
+          "itank_food1.png",
+        ],
+        '1'
+      );
+       
+       ServicePage.renderServiceGallery(
+        i18next.t("contact_text"),
+        [
+          "itank_water_car.png",
+          "itank_water_car1.png",
+        ],
+        '2'
+      );
+       ServicePage.renderServiceGallery(
+        i18next.t("contact_text"),
+        [
+          "iWelding.jpg",
+          "laser2.jpg",
+          "laser3.jpg"
+        ],
+        '3'
       );
     });
   });
