@@ -1,0 +1,163 @@
+header {
+  background-color: #ffffff;
+  padding: 1.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 110px;
+  height: auto;
+  object-fit: contain;
+  transition: all 0.4s ease;
+}
+
+.logo-title h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #263d4b;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+nav a {
+  color: #0fc415;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #0095ff;
+  transform: translateY(-3px);
+}
+
+.language-switcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  background-color: #4a505d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #61dafb;
+}
+
+/* عند التحرك للأسفل */
+header.shrink {
+  padding: 1rem 0;
+}
+
+header.shrink .logo {
+  width: 80px;
+}
+
+header.shrink .logo-title h1 {
+  font-size: 1.6rem;
+}
+
+/* تجاوب مع الموبايل مع الحفاظ على التخطيط الأفقي */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .logo-title {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .language-switcher {
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .right-side {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    max-width: 200px;
+  }
+}

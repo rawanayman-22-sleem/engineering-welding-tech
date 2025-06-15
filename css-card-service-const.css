@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(255, 255, 255, 0.7)
+      ),
+    url('welding3.jpg') no-repeat left center / cover;
+  padding: 2rem;
+  direction: rtl;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.9s ease, box-shadow 0.9s ease;
+  flex-wrap: wrap;
+}
+
+.card img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.card-text {
+  flex: 1;
+}
+
+.card h1 {
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin-bottom: 0.5rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 20px 10px 25px rgba(0, 132, 255, 0.992);
+}
+
+/* Animation keyframes */
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-left {
+  animation: slideLeft 1s ease forwards;
+}
+
+/* ✅ هنا بقى التعديل المهم: */
+@media (max-width: 992px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-text {
+    width: 100%;
+  }
+}

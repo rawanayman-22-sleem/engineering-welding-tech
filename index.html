@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title data-i18n="title"></title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="conected.css" />
-    <link rel="stylesheet" href="headar.css" /> 
+    <link rel="stylesheet" href="css-styles.css" />
+    <link rel="stylesheet" href="css-conected.css" />
+    <link rel="stylesheet" href="css-headar.css" /> 
 
     <script src="https://unpkg.com/i18next@22.4.9/i18next.min.js"></script>
     <script src="https://unpkg.com/i18next-http-backend@1.4.1/i18nextHttpBackend.min.js"></script>
-    <script src="language.js"></script>
+
+    <script src="js-language.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,16 +21,17 @@
 
 <body>
 <header>
+
   <div class="header-container">
     <div class="left-side">
       <div class="logo-title">
-        <img src="logoCompany.png" data-i18n="logo" class="logo" />
+        <img src="ilogoCompany.png" data-i18n="logo" class="logo" />
         <h1 data-i18n="title"></h1>
       </div>
     </div>
 
     <div class="right-side">
-      <nav>
+      <nav >
         <ul>
           <li><a href="#about" data-i18n="nav_about"></a></li>
           <li><a href="#services" data-i18n="nav_services">الخدمات</a></li>
@@ -46,7 +48,7 @@
 
   <section class="hero">
     <video autoplay muted loop id="heroVideo">
-        <source src="video_Welding.mp4" type="video/mp4" />
+        <source src="vwelding1.mp4" type="video/mp4" />
     </video>
     <div class="container">
         <h1 data-i18n="text_1"></h1>
@@ -58,15 +60,15 @@
      <section id="services" class="services">
         <h1 data-i18n="nav_services"></h1>
         <div class="service-cards">
-          <a href="welding-details.html" target="_blank" class="card">
-           <img src="Welding.jpg" alt="" data-i18n="service_electric" />
+          <a href="html-welding-details.html" target="_blank" class="card">
+           <img src="iWelding.jpg" alt="" data-i18n="service_electric" />
               <h3 data-i18n="service_electric"> </h3>
                <p data-i18n="service_electric1"> </p>
              </a>
 
             <div class="service-cards">
-          <a href="manufacturing-details.html" target="_blank" class="card">
-            <img src="manufact.jpg" alt="">
+          <a href="html-manufacturing-details.html" target="_blank" class="card">
+            <img src="imanufact.jpg" alt="">
             <h3 data-i18n="service_make"> </h3>
                <p data-i18n="service_make1"> </p>
              </a>
@@ -107,12 +109,12 @@
       <p data-i18n="nav_about1"></p>
 
       <!-- زر المزيد -->
-      <a href="aboutUs.html" target="_blank" class="btn-more" data-i18n="botton_more"></a>
+      <a href="html-aboutUs.html" target="_blank" class="btn-more" data-i18n="botton_more"></a>
     </div>
 
     <div class="about-video">
       <video autoplay muted loop playsinline id="aboutVideo" aria-label="About Us Video">
-        <source src="welding.mp4" type="video/mp4" />
+        <source src="vwelding.mp4" type="video/mp4" />
         <!-- نص بديل في حالة عدم دعم الفيديو -->
         <p>Your browser does not support HTML5 video.</p>
       </video>
@@ -157,7 +159,7 @@
         <h3 data-i18n="foteer_2"></h3>
         <div class="social-icons">
           <a href="https://www.facebook.com/share/1WGjwcB1sP/" class="btn" target="_blank">
-            <img src="faceicon.png" alt="Facebook">
+            <img src="ifaceicon.png" alt="Facebook">
           </a>
         </div>
       </div>
@@ -168,7 +170,6 @@
      <span data-i18n="contact_text2"></span>
   </div>
 </footer>
-
 
 
 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>خدمات التصنيع </title>
+  
+  <link rel="stylesheet" href="css-page-const-desig.css" />
+
+  <script src="js-const-page.js"></script>
+
+  <script src="https://unpkg.com/i18next@22.4.9/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend@1.4.1/i18nextHttpBackend.min.js"></script>
+ 
+  <script src="js-language.js"></script>
+
+
+</head>
+<body> 
+
+    <h1 style="text-align: center; margin-bottom: 40px; color: #000000;">معرض خدمات التصنيع  </h1>
+
+    <div class="filter-buttons">
+    <button data-filter="all" class="active">الكل</button>
+    <button data-filter="تصنيع">تصنيع</button>
+    <button data-filter="تصليح">تصليح</button>
+</div>
+
+  <div id="services-container"></div>
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="ServicePage.closeLightbox()">&times;</span>
+    <span class="prev" onclick="ServicePage.prevImage()">&#10094;</span>
+    <img id="lightbox-img" src="" alt="صورة مكبرة" />
+    <span class="next" onclick="ServicePage.nextImage()">&#10095;</span>
+  </div>
+
+ 
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    i18next.on('initialized', () => {
+      ServicePage.renderServiceGallery(
+        i18next.t("contact_text"),
+        [
+          "itank_car.png",
+          "itank_car1.png",
+         ],
+        'تصليح'  // نفس القيمة بالضبط مع data-filter في الزر
+      );
+
+      ServicePage.renderServiceGallery(
+        i18next.t("contact_text"),
+        [
+          "itank_food.png",
+          "itank_food1.png",
+        ],
+        'تصنيع'
+      );
+       
+       ServicePage.renderServiceGallery(
+        i18next.t("contact_text"),
+        [
+          "itank_water_car.png",
+          "itank_water_car1.png",
+        ],
+        'تصنيع'
+      );
+       ServicePage.renderServiceGallery(
+        i18next.t("contact_text"),
+        [
+          "iWelding.jpg",
+          "laser2.jpg",
+          "laser3.jpg"
+        ],
+        'تصنيع'
+      );
+    });
+  });
+</script>
+
+
+</body>
+</html>
