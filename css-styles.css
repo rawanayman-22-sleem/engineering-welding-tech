@@ -5,11 +5,12 @@ body {
         rgba(255, 255, 255, 0.9),
         rgba(157, 153, 153, 0.9)
       ),
-      url('ilogo.png') no-repeat center center / cover;
+      url('iwelding3.jpg') no-repeat center center / cover; 
     color: #333;
     margin: 0;
     padding: 0;
-}
+
+    }
 
 h1 {
     color: rgb(0, 0, 0);
@@ -136,6 +137,7 @@ h1 {
     }
 }
 
+
 /* الاقسام: خدمات، من نحن، تواصل */
 .services, .contact {
     padding: 3rem 2rem;
@@ -206,7 +208,7 @@ h1 {
 }
 
 .btn-more:hover {
-  background-color: #21a1f1;
+  background-color: #000000;
 }
 
 .about-video {

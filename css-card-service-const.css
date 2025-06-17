@@ -4,8 +4,8 @@ body {
         to right,
         rgba(0, 0, 0, 0.4),
         rgba(255, 255, 255, 0.7)
-      ),
-    url('welding3.jpg') no-repeat left center / cover;
+      );
+  /*  url('welding3.jpg') no-repeat left center / cover;  */
   padding: 2rem;
   direction: rtl;
 }
